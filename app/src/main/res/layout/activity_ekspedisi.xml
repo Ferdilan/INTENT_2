@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ekspedisi">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JENIS PAKET" />
+
+    <EditText
+        android:id="@+id/id_dari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dari"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/id_ke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ke"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radio_group_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="getCheckedRadioButton"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Express" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reguler" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ekonomi" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Berat" />
+
+        <EditText
+            android:id="@+id/id_berat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Berat (Kg)"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="HandleHitung"
+        android:text="Hitung" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="HandleClear"
+        android:text="Clear" />
+
+</LinearLayout>
