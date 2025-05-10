@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">INTENT 2</string>
+
+    <string-array name="nama_kota">
+<!--        <item>Pilih Kota Asal</item>-->
+<!--        <item>Pilih Kota Tujuan</item>-->
+        <item>Ponorogo</item>
+        <item>Malang</item>
+        <item>Madiun</item>
+        <item>Surabaya</item>
+    </string-array>
+
 </resources>
